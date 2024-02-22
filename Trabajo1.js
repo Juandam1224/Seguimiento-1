@@ -1,10 +1,10 @@
 // Funciones 
 
 //Variables 
-let estatura = 1.75;
-let peso = "60Kg"
+let color = "Negro";
+let Musicafavorita = "Hiphop"
 let carrera = "Tecnologia en desarrollo de software"
-const nombre = "Juan"
+const nombre = "Juan David"
 const nacimiento = 2004;
 
 //No Parametros
@@ -16,12 +16,25 @@ console.log("Su Numero Aletorio Es: " + radomNum());
 
 
 
-//Un Parametro 
-const caluculadoraedad = añonacimiento => {
-edad = 2024 - añonacimiento;
-return edad
+//Un Parametro Opcion 1 
+function cortaOlarga(palabra){
+    if(palabra.length <= 5 ){
+        console.log(`la palabra ${palabra} es corta`);
+    }else{
+        console.log(`la palabra ${palabra} es larga`);
+    }
 }
-console.log("Su Edad Es: " + caluculadoraedad(2004));
+cortaOlarga ("Sol")
+cortaOlarga ("Holacomoestas")
+
+//Un Parametro Opcion 2
+function cortaOlarga(palabra){
+    const longitud = palabra.length;
+    const mensaje = longitud <= 5 ? "Corta" : "Larga"
+    console.log(`la palabra ${palabra} es  ${mensaje}`);
+}
+cortaOlarga ("Perro")
+cortaOlarga ("Computadora")
 
 
 
